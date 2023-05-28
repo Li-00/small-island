@@ -1,6 +1,7 @@
 # small-island
 
 ## 项目结构
+```
 ├── README.md
 ├── node_modules
 ├── public.ts
@@ -15,6 +16,7 @@
 ├── jsconfig.json
 ├── package.json
 ├── vue.config.json
+```
 
 
 ## 目录解析
