@@ -20,12 +20,18 @@
 
 
 ## 目录解析
-main.js：主入口
-App.vue：组件、路由配置
-commponents:组件视窗
-assets:静态资源，字体图片等
+目录/文件        | 说明                                       |
+| ------------ | ---------------------------------------- |
+| node_modules | 项目依赖模块，npm install 产物                            |
+| src          | 开发目录             |
+| assets       | 静态资源，字体图片等                           |
+| components   | vue 组件存放目录               |
+| App.vue      | 项目入口文件 |
+| main.js      | 项目的核心文件                                 |
+| index.html   | 首页入口文件          |
+| package.json | 项目配置文件                                  |
 vue 使用参考官方文档  https://cn.vuejs.org/
- 
+
 # 项目配置
 注意：项目使用 yarn 作为包管理器
 环境版本
