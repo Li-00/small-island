@@ -13,6 +13,12 @@ const routes = [
         component: () =>
             import(/* webpackChunkName: "chatlog" */ '@/views/ChatLog.vue'),
     },
+    {
+        path: '/analysis',
+        name: 'Analysis',
+        component: () =>
+            import(/* webpackChunkName: "analysis" */ '@/views/Analysis.vue'),
+    },
 ]
 
 const router = createRouter({

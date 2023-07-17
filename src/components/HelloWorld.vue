@@ -4,6 +4,8 @@
 
         <div>
             <router-link to="/chatlog">跳转到聊天记录展示页</router-link>
+            <br />
+            <router-link to="/analysis">跳转到分析页</router-link>
         </div>
 
         <p>
