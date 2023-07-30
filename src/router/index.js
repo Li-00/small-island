@@ -19,6 +19,20 @@ const routes = [
         component: () =>
             import(/* webpackChunkName: "analysis" */ '@/views/Analysis.vue'),
     },
+    {
+        path: '/multiAnalysis',
+        name: 'MultiAnalysis',
+        component: () =>
+            import(
+                /* webpackChunkName: "multiAnalysis" */ '@/views/MultiAnalysis.vue'
+            ),
+    },
+    {
+        path: '/list',
+        name: 'list',
+        component: () =>
+            import(/* webpackChunkName: "list" */ '@/views/list.vue'),
+    },
 ]
 
 const router = createRouter({

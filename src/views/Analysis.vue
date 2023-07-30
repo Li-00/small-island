@@ -355,7 +355,7 @@ const contentRatio = () => {
         },
         grid: {
             top: 40,
-            left: 30,
+            left: 35,
             right: 50,
             bottom: 110,
         },
@@ -397,6 +397,9 @@ const contentRatio = () => {
             max: 2.5,
             axisLabel: {
                 formatter: val => {
+                    if (val == 0) {
+                        return val
+                    }
                     if (val == 1 || val == 2) {
                         val += '.0'
                     }
@@ -580,6 +583,17 @@ const contentTime = () => {
     border-radius: 5px;
 }
 
+/* 分析页-标题样式 */
+@mixin analysis-title {
+    display: block;
+    position: absolute;
+    height: 22px;
+    color: #101010;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 20px;
+}
+
 /* 分析页 */
 .analysis-main {
     width: 80%;
@@ -601,17 +615,10 @@ const contentTime = () => {
 
         /* 分析头部标题 */
         &::after {
+            @include analysis-title;
             content: '舆情分析';
-            display: block;
-            position: absolute;
             top: 20px;
             left: 21px;
-            height: 22px;
-            color: rgba(16, 16, 16, 100);
-            font-size: 16px;
-            font-weight: 600;
-            text-align: left;
-            line-height: 20px;
         }
 
         /* 数据 */
@@ -660,16 +667,10 @@ const contentTime = () => {
 
             /* 标题 */
             &::after {
+                @include analysis-title;
                 content: '访问总人数';
-                display: block;
-                position: absolute;
                 top: 16px;
                 left: 20px;
-                height: 22px;
-                color: rgba(16, 16, 16, 100);
-                font-size: 16px;
-                text-align: left;
-                line-height: 20px;
             }
 
             /* 图表-访问总人数 */
@@ -695,16 +696,10 @@ const contentTime = () => {
 
             /* 标题 */
             &::after {
+                @include analysis-title;
                 content: '内容发布量';
-                display: block;
-                position: absolute;
                 top: 16px;
                 left: 20px;
-                height: 22px;
-                color: rgba(16, 16, 16, 100);
-                font-size: 16px;
-                text-align: left;
-                line-height: 20px;
             }
 
             /* 图表-内容发布量 */
@@ -730,16 +725,10 @@ const contentTime = () => {
 
             /* 标题 */
             &::after {
+                @include analysis-title;
                 content: '评论总量';
-                display: block;
-                position: absolute;
                 top: 16px;
                 left: 20px;
-                height: 22px;
-                color: rgba(16, 16, 16, 100);
-                font-size: 16px;
-                text-align: left;
-                line-height: 20px;
             }
 
             /* 图表-评论总量 */
@@ -765,16 +754,10 @@ const contentTime = () => {
 
             /* 标题 */
             &::after {
+                @include analysis-title;
                 content: '分享总量';
-                display: block;
-                position: absolute;
                 top: 16px;
                 left: 20px;
-                height: 22px;
-                color: rgba(16, 16, 16, 100);
-                font-size: 16px;
-                text-align: left;
-                line-height: 20px;
             }
 
             /* 图表-分享总量 */
@@ -820,17 +803,10 @@ const contentTime = () => {
 
             /* 分析中左标题 */
             &::after {
+                @include analysis-title;
                 content: '内容发布比例';
-                display: block;
-                position: absolute;
                 top: 20px;
                 left: 21px;
-                height: 22px;
-                color: rgba(16, 16, 16, 100);
-                font-size: 16px;
-                font-weight: 600;
-                text-align: left;
-                line-height: 20px;
             }
 
             /* 图表-内容发布比例 */
@@ -851,17 +827,10 @@ const contentTime = () => {
 
             /* 分析中右标题 */
             &::after {
+                @include analysis-title;
                 content: '热门作者榜单';
-                display: block;
-                position: absolute;
                 top: 20px;
                 left: 21px;
-                height: 22px;
-                color: rgba(16, 16, 16, 100);
-                font-size: 16px;
-                font-weight: 600;
-                text-align: left;
-                line-height: 20px;
             }
 
             /* 热榜字段 */
@@ -1003,17 +972,10 @@ const contentTime = () => {
 
         /* 分析底部标题 */
         &::after {
+            @include analysis-title;
             content: '内容时段分析';
-            display: block;
-            position: absolute;
             top: 20px;
             left: 21px;
-            height: 22px;
-            color: rgba(16, 16, 16, 100);
-            font-size: 16px;
-            font-weight: 600;
-            text-align: left;
-            line-height: 20px;
         }
 
         /* 图表-发布时段 */

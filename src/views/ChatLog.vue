@@ -1,6 +1,6 @@
 <template>
     <!-- S 聊天展示 -->
-    <div class="chat-wrap">
+    <div class="chat">
         <!-- 侧边栏 -->
         <div class="aside">这里是侧边栏</div>
         <!-- 主体内容 -->
@@ -147,18 +147,12 @@ export default {
 <style lang="scss" scoped>
 /* 聊天记录页面 
 ----------------------------------------------------------------*/
-.chat-wrap {
+.chat {
     display: flex;
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    overflow-y: auto;
-    width: 100%;
-    min-height: 100vh;
     margin: auto;
     background-color: #eee;
+    width: 1200px;
+    height: 766px;
 }
 
 /* 主体内容 

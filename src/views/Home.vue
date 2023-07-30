@@ -2,6 +2,8 @@
     <div>
         <router-link to="/chatlog">跳转到聊天记录展示页</router-link>
         <router-link to="/analysis">跳转到分析页</router-link>
+        <router-link to="/multiAnalysis">跳转到多维分析页</router-link>
+        <router-link to="/list">跳转到机器人列表页</router-link>
     </div>
 </template>
 
