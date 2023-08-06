@@ -1,14 +1,15 @@
 <template>
-    <div>
-        <a-layout>
-            <HeadNav></HeadNav>
-            <a-layout>
-                <div class="menu">
-                    <MenuList :menu="menuLists"></MenuList> 
-                </div>
-               
-            </a-layout>
-        </a-layout>
+    <div class="layout">
+        <HeadNav></HeadNav>
+        <div class="menu">
+            <div class="menu-list">
+                <MenuList></MenuList> 
+            </div>
+            
+            <div class="content">
+                <router-view></router-view>
+            </div>
+        </div>
     </div>
 </template>
 <script src="./initLayout.js"></script>

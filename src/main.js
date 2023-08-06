@@ -1,9 +1,14 @@
 import { createApp } from 'vue'
+import ElementPlus from 'element-plus'
+import 'element-plus/dist/index.css'
 import App from './App.vue'
+import router from './router/router.js'
 
-// import 'ant-design-vue/dist/antd.less'
-import Ant from '@plugins/antd'
+import './assets/iconfont/iconfont.css'
+
+// import Ant from '@plugins/antd'
 
 const app = createApp(App)
-app.use(Ant)
+app.use(ElementPlus)
+app.use(router)
 app.mount('#app')

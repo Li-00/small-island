@@ -1,5 +1,5 @@
-import HeadNav from '@components/HeadNav/headNav.vue'
-import MenuList from '@components/MenuList/menuList.vue'
+import HeadNav from './../HeadNav/headNav.vue'
+import MenuList from './../MenuList/menuList.vue'
 
 
 export default {

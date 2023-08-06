@@ -22,8 +22,6 @@ const Ant = {
         Vue.component('a-avatar', Avatar)
         Vue.component('a-image',Image)
         Vue.component('a-menu',Menu)
-        Vue.component('a-menu-item',Menu.item)
-        Vue.component('a-sub-menu',Menu.SubMenu)
         Vue.component('a-layout',Layout)
 
         
