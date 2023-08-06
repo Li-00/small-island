@@ -16,7 +16,7 @@ const props = defineProps(['currentRoute'])
 
 <style scoped>
 .bread-crumb {
-    padding: 10px 0;
+    padding: 20px 0;
 }
 .el-breadcrumb {
     display: flex;

@@ -7,10 +7,10 @@
         </div>
         <div class="headNav-control">
             <div class="headNav-control-icon">
-                <div class="icons"><i class="iconfont icon-sousuo"></i></div>
-                <div class="icons"><i class="iconfont icon-translate"></i></div>
-                <div class="icons"><i class="iconfont icon-shiwutixing-moren"></i></div>
-                <div class="icons"><i class="iconfont icon-taiyang"></i></div>
+               <i class="icons iconfont icon-sousuo"></i>
+                <i class="icons iconfont icon-translate"></i>
+                <i class="icons iconfont icon-shiwutixing-moren"></i>
+              <i class="icons iconfont icon-taiyang"></i>
             </div>
             <div class="headNav-control-avatar">
                 <el-avatar :size="30" :src="circleUrl" />

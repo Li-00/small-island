@@ -1,12 +1,14 @@
 .headNav {
-  height: 50px;
+  height: 60px;
   padding: 0 10px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  box-shadow: 3px 3px 5px 0 #000;
+  box-shadow: 3px 3px 5px 0 rgba(0, 0, 0, 0.2);
   background-color: #fff;
   margin-bottom: 4px;
+  margin-top: 20px;
+  font-size: 18px;
 }
 .headNav .headNav-logo {
   display: flex;
@@ -30,4 +32,9 @@
 }
 .headNav .headNav-control .headNav-control-icon .icons {
   margin-right: 20px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }

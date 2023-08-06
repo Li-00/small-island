@@ -7,7 +7,7 @@
         <el-sub-menu :index="item.path" v-if="item.children && item.children.length > 0" :key="item.path">
   
           <template #title>
-            <i :class="['iconfont',item.icon]"></i>
+            <i :class="['menu-icon','iconfont',item.icon]"></i>
             <span>{{ item.title }}</span>
           </template>
         
@@ -16,7 +16,7 @@
         <!--一级路由-->
         <template v-else>
           <el-menu-item :index="item.path" :key="item.path">
-            <router-link :to="item.path">
+            <router-link style="text-decoration: none;" :to="item.path">
                 <span>{{ item.title }}</span>
             </router-link>
           </el-menu-item>
@@ -44,11 +44,15 @@
   }
   </script>
   
-  <style scoped>
+  <style lang="less" scoped>
   .menuList {
     height: 100%;
     background-color: #fff;
+    .menu-icon {
+      margin-right: 20px;
+    }
   }
+
   .el-menu {
     border-right: 0;
     width: 200px;

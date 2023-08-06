@@ -9,7 +9,7 @@
       </el-sub-menu>
       <template v-else>
         <el-menu-item :index="val.path" :key="val.path">
-            <router-link :to="val.path">
+            <router-link style="text-decoration: none;" :to="val.path">
                 <span>{{ val.title }}</span>
             </router-link>
         </el-menu-item>
