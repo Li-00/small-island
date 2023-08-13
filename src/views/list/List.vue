@@ -1,8 +1,8 @@
 <template>
     <div>
-        <system-layout>
-            <div>首页</div>
-        </system-layout>
+        <SystemLayout>
+            <router-view></router-view>
+        </SystemLayout>
     </div>
 </template>
 

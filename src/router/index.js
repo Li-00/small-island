@@ -1,43 +1,16 @@
-import { createRouter, createWebHistory } from 'vue-router'
-import Home from '@/views/Home'
+import { createRouter, createWebHashHistory } from 'vue-router'
 
-const routes = [
-    {
-        path: '/',
-        name: 'Home',
-        component: Home,
-    },
-    {
-        path: '/chatlog',
-        name: 'ChatLog',
-        component: () =>
-            import(/* webpackChunkName: "chatlog" */ '@/views/ChatLog.vue'),
-    },
-    {
-        path: '/analysis',
-        name: 'Analysis',
-        component: () =>
-            import(/* webpackChunkName: "analysis" */ '@/views/Analysis.vue'),
-    },
-    {
-        path: '/multiAnalysis',
-        name: 'MultiAnalysis',
-        component: () =>
-            import(
-                /* webpackChunkName: "multiAnalysis" */ '@/views/MultiAnalysis.vue'
-            ),
-    },
-    {
-        path: '/list',
-        name: 'list',
-        component: () =>
-            import(/* webpackChunkName: "list" */ '@/views/list.vue'),
-    },
-]
+// 引入路由表
+import { AppRoutes } from '@/router/routes'
 
-const router = createRouter({
-    history: createWebHistory(),
-    routes,
+const AppRouter = createRouter({
+    history: createWebHashHistory(),
+    routes: AppRoutes,
 })
 
-export default router
+// 引入导航守卫
+import { beforeEach, afterEach } from '@/router/guard'
+AppRouter.beforeEach(beforeEach)
+AppRouter.afterEach(afterEach)
+
+export default AppRouter
