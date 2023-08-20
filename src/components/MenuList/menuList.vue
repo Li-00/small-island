@@ -46,7 +46,7 @@
   
   <style lang="less" scoped>
   .menuList {
-    height: 100%;
+    height: 100vh;
     background-color: #fff;
     .menu-icon {
       margin-right: 20px;
@@ -55,7 +55,7 @@
 
   .el-menu {
     border-right: 0;
-    width: 200px;
+    width: 260px;
     height: 100%;
   }
   </style>

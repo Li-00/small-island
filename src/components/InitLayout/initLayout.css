@@ -13,5 +13,5 @@
   background-color: #fff;
 }
 .layout .menu .content {
-  width: 100%;
+  width: calc(100vw - 200);
 }

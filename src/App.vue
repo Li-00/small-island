@@ -1,5 +1,7 @@
 <template>
-  <InitLayout></InitLayout>
+  <div class="app-content">
+    <InitLayout></InitLayout>
+  </div>
 </template>
 
 <script setup>
@@ -38,7 +40,14 @@ window.ResizeObserver = class ResizeObserver extends _ResizeObserver {
   padding: 0;
   margin: 0;
 }
-#app {
+div,p {
+  box-sizing: border-box;
+}
+.app-content{
+  width: 100%;
+  position: relative;
+}
+/* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
@@ -46,5 +55,5 @@ window.ResizeObserver = class ResizeObserver extends _ResizeObserver {
   color: #2c3e50;
   padding: 0;
   /* margin-top: 60px; */
-}
+/* } */ 
 </style>

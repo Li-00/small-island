@@ -1,15 +1,18 @@
 <template>
     <div class="layout">
         <HeadNav></HeadNav>
-        <div class="menu">
+        <el-container>
             <div class="menu-list">
                 <MenuList></MenuList> 
             </div>
             
-            <div class="content">
-                <router-view></router-view>
-            </div>
-        </div>
+            <el-container>
+                <!-- <el-scrollbar> -->
+                    <router-view></router-view>
+                <!-- </el-scrollbar> -->
+                
+            </el-container>
+        </el-container>
     </div>
 </template>
 <script src="./initLayout.js"></script>

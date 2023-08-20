@@ -137,7 +137,7 @@ const handleCurrentChange = () => {}
     margin-left: 20px;
     font-size: 16px;
     .dialogue-content {
-        width: 100%;
+        // width: 100%;
         display: flex;
         justify-content: start;
         flex-wrap: wrap;
@@ -150,6 +150,7 @@ const handleCurrentChange = () => {}
             font-weight: 600;
         }
         .dialogue-content-query {
+            width: 100%;
             padding-bottom: 20px;
             border-bottom: 6px solid #f7f8fa;
         }
@@ -161,6 +162,7 @@ const handleCurrentChange = () => {}
         }
 
         .dialogue-content-table{
+            width: 100%;
             .table-pagination {
                 margin-top: 20px;
                 display: flex;
