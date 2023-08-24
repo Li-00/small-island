@@ -1,8 +1,8 @@
 @font-face {
   font-family: "iconfont"; /* Project id 4199409 */
-  src: url('//at.alicdn.com/t/c/font_4199409_fokzsj86fdw.woff2?t=1691325938415') format('woff2'),
-       url('//at.alicdn.com/t/c/font_4199409_fokzsj86fdw.woff?t=1691325938415') format('woff'),
-       url('//at.alicdn.com/t/c/font_4199409_fokzsj86fdw.ttf?t=1691325938415') format('truetype');
+  src: url('//at.alicdn.com/t/c/font_4199409_n9a7a0pxzk.woff2?t=1692886413959') format('woff2'),
+       url('//at.alicdn.com/t/c/font_4199409_n9a7a0pxzk.woff?t=1692886413959') format('woff'),
+       url('//at.alicdn.com/t/c/font_4199409_n9a7a0pxzk.ttf?t=1692886413959') format('truetype');
 }
 
 .iconfont {
@@ -11,6 +11,22 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-zhaoxiangji1:before {
+  content: "\e60c";
+}
+
+.icon-zhaoxiangji:before {
+  content: "\e615";
+}
+
+.icon-yonghu:before {
+  content: "\e620";
+}
+
+.icon-weizhi:before {
+  content: "\e601";
 }
 
 .icon-zhongzhi:before {

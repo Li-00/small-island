@@ -25,6 +25,26 @@ export const routes = [
                 component: () => import('./../view/conversationLists/conversationLists.vue')
             }
         ]
+    },
+    {
+        path:'/personalCenter',
+        name:'PersonalCenter',
+        title:'个人中心',
+        icon:'icon-liebiaoye',
+        meta:{
+            title:'列表页'
+        },
+        children: [
+            {
+                path:'/userInfo',
+                name:'UserInfo',
+                title:'用户信息',
+                meta:{
+                    title:'用户信息'
+                },
+                component: () => import('./../view/personalCenter/userInfo/userInfo.vue')
+            }
+        ]
     }
 ]
 
