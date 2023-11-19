@@ -1,26 +1,61 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="small-island"/>
+    <div class="app-content">
+        <InitLayout></InitLayout>
+    </div>
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
+<script setup>
+import InitLayout from './components/InitLayout/initLayout.vue'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
+// export default {
+//   name: 'App',
+//   components: {
+//     InitLayout
+//   }
+// }
+
+const debounce = (fn, delay) => {
+    let timer = null
+    return function () {
+        let context = this
+        let args = arguments
+        clearTimeout(timer)
+        timer = setTimeout(function () {
+            fn.apply(context, args)
+        }, delay)
+    }
+}
+
+const _ResizeObserver = window.ResizeObserver
+window.ResizeObserver = class ResizeObserver extends _ResizeObserver {
+    constructor(callback) {
+        callback = debounce(callback, 16)
+        super(callback)
+    }
 }
 </script>
 
 <style>
-#app {
+* {
+    padding: 0;
+    margin: 0;
+}
+div,
+p {
+    box-sizing: border-box;
+}
+.app-content {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+/* #app {
   font-family: Avenir, Helvetica, Arial, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
   color: #2c3e50;
-  margin-top: 60px;
-}
+  padding: 0;
+  /* margin-top: 60px; */
+/* } */
 </style>
